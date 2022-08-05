@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="lancelot"
+FDEVICE="merlin"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep $FDEVICE)
@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-	export TARGET_DEVICE_ALT="shiva"
-	export OF_TARGET_DEVICES="lancelot,shiva"
+	export TARGET_DEVICE_ALT=""
+	export OF_TARGET_DEVICES="merlin"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
@@ -95,6 +95,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_LZMA_COMPRESSION=1
 	export FOX_DELETE_INITD_ADDON=1
 	export OF_SKIP_ORANGEFOX_PROCESS=1
+
 	# Run a Process After Formatting Data to Work-Around MTP Issues
 	export OF_RUN_POST_FORMAT_PROCESS=1
 
