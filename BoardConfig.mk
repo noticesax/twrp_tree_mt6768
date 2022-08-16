@@ -156,8 +156,8 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-LZMA_RAMDISK_TARGETS := recovery
-LZMA_COMPRESSION := -9
+# LZMA_RAMDISK_TARGETS := recovery
+#LZMA_COMPRESSION := -9
 
 
 #SHRP Specific Stuff
