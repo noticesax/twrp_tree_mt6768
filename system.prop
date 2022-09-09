@@ -8,7 +8,6 @@ ro.secure=0
 ro.adb.secure=0
 ro.debuggable=1
 ro.sf.lcd_density=440
-ro.treble.enabled=true
 ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
 fbe.metadata.wrappedkey=true
 vendor.gatekeeper.disable_spu=true
