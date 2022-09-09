@@ -146,5 +146,33 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 
+#SHRP Specific Stuff
 
-
+SHRP_PATH := device/xiaomi/lancelot
+SHRP_MAINTAINER := @shas45558
+SHRP_DEVICE_CODE := lancelot
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_only
+SHRP_NOTCH := true
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /UFS_SD
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/leds/flashlight/brightness
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_REC := /dev/block/by-name/recovery
+INC_IN_REC_MAGISK := true
+SHRP_DARK := true
+#SHRP_LITE := true
+#SHRP_NOTCH := true
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+#SHRP_OFFICIAL := true
+INC_IN_REC_ADDON_1 := true
+INC_IN_REC_ADDON_2 := true
+INC_IN_REC_ADDON_3 := true
+INC_IN_REC_ADDON_4 := true
