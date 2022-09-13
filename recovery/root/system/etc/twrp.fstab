@@ -5,18 +5,9 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-/metadata           ext4      /dev/block/platform/bootdevice/by-name/md_udc flags=display="Metadata1";backup=1
-/metadata           ext4      /dev/block/platform/bootdevice/by-name/md_udc flags=display="Metadata2";backup=1
-=======
-/metadata           ext4.     /dev/block/platform/bootdevice/by-name/md_udc. flags=display="Metadata";backup=1
->>>>>>> refs/remotes/origin/lancelot_a12t
-=======
 /metadata           ext4      /dev/block/platform/bootdevice/by-name/md_udc  flags=display="Metadata1";backup=1
 /metadata           ext4      /dev/block/platform/bootdevice/by-name/metadata  flags=display="Metadata2";backup=1
->>>>>>> 22b2feaddad6138f162e149a021d515e7f993786
 /system             ext4      /dev/block/mapper/system                       flags=display="System";backup=1
 /system_image       emmc      /dev/block/mapper/system                       flags=display="System image";backup=1;flashimg=1
 /vendor             ext4      /dev/block/mapper/vendor                       flags=display="Vendor";backup=1
