@@ -1,6 +1,7 @@
 import /init.recovery.teei_daemon.rc
 
 on fs
+    start vold
     install_keyring
 
 on fs
