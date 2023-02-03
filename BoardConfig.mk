@@ -122,6 +122,7 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 BOARD_USES_METADATA_PARTITION := true
+# TW_CRYPTO_USE_SYSTEM_VOLD := true
 
 # TWRP Configuration
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness"
@@ -156,8 +157,8 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-LZMA_RAMDISK_TARGETS := recovery
-LZMA_COMPRESSION := -9
+# LZMA_RAMDISK_TARGETS := recovery
+# LZMA_COMPRESSION := -9
 
 
 #SHRP Specific Stuff
@@ -186,11 +187,10 @@ INC_IN_REC_MAGISK := true
 SHRP_EXPRESS := true
 SHRP_EXPRESS_USE_DATA := true
 #SHRP_OFFICIAL := true
-INC_IN_REC_ADDON_1 := true
-INC_IN_REC_ADDON_2 := true
-INC_IN_REC_ADDON_3 := true
-INC_IN_REC_ADDON_4 := true
-
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+SHRP_SKIP_DEFAULT_ADDON_1 := true
 #SHRP Addons
 
 SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/lancelot/addon/"
