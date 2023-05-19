@@ -15,6 +15,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from lancelot device
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 PRODUCT_DEVICE := lancelot
 PRODUCT_NAME := twrp_lancelot
 PRODUCT_BRAND := Redmi
