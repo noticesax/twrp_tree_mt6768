@@ -8,7 +8,7 @@ on early-fs
     start vold
 
 on late-fs
-   … 
+
     # Wait for keymaster
     exec_start wait_for_keymaster
 
