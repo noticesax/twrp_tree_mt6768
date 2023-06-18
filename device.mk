@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/xiaomi/lancelot
+LOCAL_PATH := device/xiaomi/merlinx
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 31
