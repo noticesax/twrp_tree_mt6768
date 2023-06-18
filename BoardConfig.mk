@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/lancelot
+DEVICE_PATH := device/xiaomi/merlinx
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -45,7 +45,7 @@ BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := lancelot
+TARGET_OTA_ASSERT_DEVICE := merlinx
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := mt6768
