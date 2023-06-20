@@ -139,24 +139,17 @@ TW_BRIGHTNESS_PATH := "/sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brig
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 205
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
 #TW_Y_OFFSET := 80
 #TW_H_OFFSET := -80
-TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true 
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_SKIP_COMPATIBILITY_CHECK := true
-TW_INCLUDE_REPACKTOOLS := true
 #TW_NO_SCREEN_TIMEOUT := true
 TW_INCLUDE_FB2PNG := true
-TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_FASTBOOTD := true
-TW_INCLUDE_PYTHON := true
 TW_LOAD_VENDOR_MODULES := true
 TW_FRAMERATE := 60
 TW_DEVICE_VERSION := Mt6768
@@ -168,26 +161,8 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 SEPOLICY_IGNORE_NEVERALLOWS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
-# Debug
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
-
 # System.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-
-# Additional binaries & libraries needed for recovery
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libkeymaster4 \
-    libkeymaster41 \
-    libpuresoftkeymasterdevice
-
-# Decryption
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
