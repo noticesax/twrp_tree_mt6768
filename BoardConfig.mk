@@ -185,9 +185,9 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libpuresoftkeymasterdevice
 
 # Decryption
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
+# TW_INCLUDE_CRYPTO := true
+# TW_INCLUDE_FBE_METADATA_DECRYPT := true
+# TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+#     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+#     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
+#     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
