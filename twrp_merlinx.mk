@@ -13,19 +13,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from lancelot device
-$(call inherit-product, device/xiaomi/lancelot/device.mk)
+# Inherit from merlinx device
+$(call inherit-product, device/xiaomi/merlinx/device.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
 
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_DEVICE := lancelot
-PRODUCT_NAME := twrp_lancelot
+PRODUCT_DEVICE := merlinx
+PRODUCT_NAME := twrp_merlinx
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi 9
+PRODUCT_MODEL := Redmi Note 9
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -37,6 +36,6 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lancelot-user 11 RP1A.200720.011 V12.5.6.0.RJCMIXM release-keys"
+    PRIVATE_BUILD_DESC="merlinx-user 11 RP1A.200720.011 V12.5.6.0.RJCMIXM release-keys"
 
-BUILD_FINGERPRINT := Redmi/lancelot_global/lancelot:11/RP1A.200720.011/V12.5.6.0.RJCMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/merlinx_global/merlinx:11/RP1A.200720.011/V12.5.6.0.RJCMIXM:user/release-keys
