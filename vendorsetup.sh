@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  	export ALLOW_MISSING_DEPENDENCIES=true
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 	export TARGET_DEVICE_ALT="shiva"
-	export OF_TARGET_DEVICES="lancelot,shiva"
+	export FOX_TARGET_DEVICES="lancelot"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
@@ -92,7 +92,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_LOCKSCREEN_BUTTON=1
 	export FOX_ENABLE_APP_MANAGER=0
 	export FOX_VARIANT=MIUI
-	export FOX_USE_LZMA_COMPRESSION=1
+	# export FOX_USE_LZMA_COMPRESSION=1
 	export FOX_DELETE_INITD_ADDON=1
 	export OF_SKIP_ORANGEFOX_PROCESS=1
 	# Run a Process After Formatting Data to Work-Around MTP Issues
