@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_merlimx.mk
+    $(LOCAL_DIR)/twrp_merlinx.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_merlinx-user \
